@@ -13,9 +13,9 @@
             while($row = $result->fetch_assoc()) {
 
                 echo "<div class=" . "dexitem" .">" . 
-                "<br>" . "Name: " . $row['name'] . "<br>" .
+                "<br>" . "<span>" . $row['name'] . "</span> <br>" .
                 "<img src= " . $row['photo'] . "> </img>" . "<br>" .
-                "ID: ";
+                "<span>ID:</span> ";
 
                 if($row['id'] < 10 ){
                     echo '00' . $row['id'];
@@ -28,15 +28,15 @@
                 else { echo $row['id'];}
 
                 echo "<br>" .
-                "Species: " . $row['species'] . " Pokemon" . "<br>" 
-                . "Type: " . $row['type']; 
+                "<span>Species:</span> " . $row['species'] . " Pokemon" . "<br>" 
+                . "<span>Type:</span> " . $row['type']; 
                 
                 if (!empty($row['type2'])){
                     echo "/" . $row['type2'];
                 }
 
                 echo "<br>" 
-                . "Description: " . $row['description'] . "<br>" . 
+                . "<span>Description:</span> " . $row['description'] . "<br>" . 
                 "</div>";
                 
             }

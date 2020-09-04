@@ -120,6 +120,7 @@ form button:focus{
 
 img{
     width: 215px;
+    margin: 20px;
 }
 
 .dexlist{
@@ -139,6 +140,10 @@ img{
     scrollbar-width: none; /* firefox */
     -ms-overflow-style: none; /* IE, Edge */
     border: 1px solid #f0f0f0;
+}
+
+.dexitem span{
+    font-weight: 700;
 }
 
 .dexitem::-webkit-scrollbar{
